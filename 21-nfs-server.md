@@ -1,5 +1,5 @@
 ## Setup Tips for ec2
-- [Fix service is masked error for nfs-common](https://askubuntu.com/a/946315
+- [Fix service is masked error for nfs-common](https://askubuntu.com/a/946315)
 - [Install NFS Server and Client on Ubuntu 18](https://vitux.com/install-nfs-server-and-client-on-ubuntu/)
 ---
 
