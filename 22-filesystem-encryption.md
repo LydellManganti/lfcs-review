@@ -1,7 +1,7 @@
 ## Encrypt File System and Swap Space
 ### Determine if encryption is supported by kernel
 - Load `dm_crypt` modules
-<details><summary>show<summary>
+<details><summary>show</summary>
 <p>
 
 ```bash
@@ -17,7 +17,7 @@ sudo modprobe dm_crypt
 ---
 
 ### Install cryptsetup
-<details><summary>show<summary>
+<details><summary>show</summary>
 <p>
 
 ```bash
@@ -34,7 +34,7 @@ sudo apt-get install cryptsetup
 - Setup Encrypted Partition
 - Open the LUKS Partition
 - Format Encrypted Partition
-<details><summary>show<summary>
+<details><summary>show</summary>
 <p>
 
 ```bash
@@ -51,7 +51,7 @@ sudo mkfs.ext4 /dev/mapper/my_encrypted_partition
 ### Mount and Test Encrypted Partition
 - Umount the Encrypted Partition
 - Close the Encrypted Partition
-<details><summary>show<summary>
+<details><summary>show</summary>
 <p>
 
 ```bash
@@ -75,7 +75,7 @@ sudo mount /dev/xvdb /mnt/encrypted
 ---
 
 ### Setup Encrypted Swap Space
-<details><summary>show<summary>
+<details><summary>show</summary>
 - Create an Encrypted Partition as above
 - Enable Swap for the Partition
 - Verify Swap Status
@@ -96,6 +96,4 @@ sudo cryptsetup status my_encrypted_swap
 ```
 </p>
 </details>
-
----
 
