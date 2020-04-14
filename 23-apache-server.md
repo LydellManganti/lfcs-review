@@ -1,7 +1,7 @@
 ## Apache Web Server
 
 ### Verify if webserver is installed or running
-<details><summary>show</details>
+<details><summary>show</summary>
 <p>
 
 ```bash
@@ -19,7 +19,7 @@ ps -ef | grep '(httpd|apache)' | grep -v grep
 - Enable the site
 - Update `/etc/hosts` file to point ip to the host
 - Test the site are working
-<details><summary>show<summary>
+<details><summary>show</summary>
 <p>
 
 ```bash
@@ -66,7 +66,7 @@ curl www.mysecondsite.com
 - Generate certificate and key file using `openssl`
 - Update VirtualHosts to enable https
 - Test the secured connection
-<details><summary>show<summary>
+<details><summary>show</summary>
 <p>
 
 ```bash
