@@ -15,6 +15,7 @@ sudo vi /etc/idmapd.conf
 # add the line
 Domain = yourdomain.com
 # Unmask and start idmapd
+sudo systemctl unmask nfs-common
 sudo rm /lib/systemd/system/nfs-common.service
 sudo systemctl start nfs-common
 ```
@@ -40,6 +41,20 @@ sudo chmod 777 /NFS-SHARE
 sudo systemctl restart nfs-server
 # Verify folders can be mounted
 showmount -e
+```
+</p>
+</details>
+
+---
+### Test NFS mount
+- Install nfs-common
+- Mount nfs
+<details><summary>show</summary>
+<p>
+
+```bash
+sudo apt-get install nfs-common
+sudo mount -t nfs 172.31.11.0:/NFS-SHARE /mnt/nfs
 ```
 </p>
 </details>
