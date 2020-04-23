@@ -27,6 +27,7 @@ tar cJf myfiles.tar.xz file[0-9]
 - Delete file4 and Add file10
 - Tar all files which are `file` ascii
 - Restore backup preserving permissions
+
 ```bash
 gzip -d myfiles.tar.gz
 bzip2 -d my myfiles.tar.bz2
