@@ -28,6 +28,9 @@ tar cJf myfiles.tar.xz file[0-9]
 - Tar all files which are `file` ascii
 - Restore backup preserving permissions
 
+<details><summary>show</summary>
+<p>
+
 ```bash
 gzip -d myfiles.tar.gz
 bzip2 -d my myfiles.tar.bz2
@@ -42,6 +45,8 @@ gzip myfiles.tar
 tar X <(for i in ./*; do file $i | grep -i ascii; if [ $? -eq 1 ]; then echo ${i:2}; fi; done) -cjf backupfile.tar.bz2 ./*
 tar zjf backupfile.tar.bz2 --directory user_restore --same-permissions
 ```
+</p>
+</details>
 
 ---
 
