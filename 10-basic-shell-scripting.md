@@ -22,6 +22,9 @@ for services in $(cat services.txt); do
 done
 ```
 
+</p>
+</details>
+
 - Update the script to verify the existence of `services.txt`
 ---
 
