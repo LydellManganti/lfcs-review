@@ -108,3 +108,24 @@ mount | grep home
 </details>
 
 ---
+
+### Maintaining Filesystem
+- display information for vol_backups
+- set volume name Backups for vol_backups
+- check volume every 50 mounts
+- check volume every 6 weeks
+
+<details><summary>show</summary>
+<p>
+
+```bash
+sudo tune2fs -l /dev/mapper/vg00-vol_backups
+sudo tune2fs -L Backups /dev/mapper/vg00-vol_backups
+sudo tune2fs -c 150 /dev/mapper/vg00-vol_backups
+sudo tune2fs -i 6w /dev/mapper/vg00-vol_backups
+```
+
+</p>
+</details>
+
+---
