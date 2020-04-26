@@ -1,5 +1,4 @@
 ## Basic Shell Scripting
----
 
 ### Shell Scripting
 - Create a shell script to test the services below if they are active
