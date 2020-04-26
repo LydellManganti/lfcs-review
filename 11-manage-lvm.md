@@ -66,7 +66,7 @@ sudo mkfs.ext4 /dev/vg00/vol_backups
 - add `xvdd` to volume group
 - display volume group after adding physical volume
 
-<details></summary>show</summary>
+<details><summary>show</summary>
 <p>
 
 ```bash
