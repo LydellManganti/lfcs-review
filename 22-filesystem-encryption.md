@@ -86,9 +86,9 @@ sudo mount /dev/xvdb /mnt/encrypted
 sudo mkswap /dev/mapper/my_encrypted_swap
 sudo swapon /dev/mapper/my_encrypted_swap
 # Update /etc/fstab with
-/dev/mapper/my_encrypted_swap non swap sw 0 0
+/dev/mapper/my_encrypted_swap none swap sw 0 0
 # Update /etc/crypttab with
-my_encrypted_swap /dev/xvdf /dev/urandom swap
+swap /dev/xvdf /dev/urandom swap
 # Reboot to apply the changes
 sudo reboot
 # Verify Swap Status
